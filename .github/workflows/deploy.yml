@@ -22,3 +22,8 @@ jobs:
         with:
           branch: gh-pages
           folder: build
+          token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./build
+
+env:
+  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
